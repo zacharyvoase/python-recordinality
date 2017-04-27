@@ -26,7 +26,7 @@ class Recordinality(object):
     def __init__(self, size, hash_key=None, store_values=True):
         if hash_key is None:
             hash_key = os.urandom(16)
-        self.hash = lambda val: struct.unpack('Q', siphash24(hash_key, val))[0]
+        self.hash = lambda val: struct.unpack('q', siphash24(hash_key, val))[0]
         self.k_records = SkipDict()
         self.size = size
         self.modifications = 0

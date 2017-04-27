@@ -35,7 +35,7 @@ setup(
 
     install_requires=[
         'csiphash>=0.0.5',
-        'cskipdict>=0.0.1'
+        'cskipdict>=0.0.2'
     ],
     extras_require={
         'test': ['coverage'],
