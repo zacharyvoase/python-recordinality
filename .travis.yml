@@ -1,4 +1,5 @@
 language: python
+compiler: clang
 
 matrix:
   include:
